@@ -1,0 +1,10 @@
+pyyaml
+rembg[gpu]
+torch
+numpy
+Pillow
+matplotlib
+opencv-python
+diffusers
+trimesh
+gradio

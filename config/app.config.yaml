@@ -1,0 +1,9 @@
+model:
+  text: 'openai/shap-e'
+  image: 'openai/shap-e-img2img'
+  guidance_scale: 15.0
+  num_inference_steps: 64
+  frame_size: 256
+image:
+  size: 256
+output: 'output/'
