@@ -43,4 +43,5 @@ If you prefer not to use the Gradio UI:
 Use the utility function included in the project to visualize results with Matplotlib.
 Or refer to Gradio's logic to customize your own output view.
 
-![3D Model](https://drive.google.com/uc?export=view&id=)
+![3D Model](https://drive.google.com/uc?export=view&id=15DoBX5OV6TnucBAVWmle-JNDsz-talo5)
+![3D Model](https://drive.google.com/uc?export=view&id=1SydG-tXE5poDERM3eKNAAXAnyzP58QVG)
