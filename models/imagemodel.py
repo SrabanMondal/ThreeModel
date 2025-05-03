@@ -7,7 +7,7 @@ import os
 #image = preprocess_image('/kaggle/input/3dtest/cup.png')
 #image = Image.open('/kaggle/input/3dtest/cup.png').resize((256, 256))
 #image = preprocess_image_rembg(IMAGE_PATH, target_size=TARGET_SIZE)
-def image3d(model,image,output,path):
+def image3d(model,image,output,path, clahe, sharp, pad):
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         pipe = ShapEImg2ImgPipeline.from_pretrained(model['image']).to(device)
         img_size = image['size']
@@ -15,9 +15,9 @@ def image3d(model,image,output,path):
         image = preprocess_image_enhanced(
         path,
         target_size=img_size,
-        clahe=True,       
-        sharpening=True,
-        padding=7          
+        clahe=clahe,       
+        sharpening=sharp,
+        padding=pad         
         )
         result = pipe(
         image,
